@@ -301,6 +301,7 @@ def cmd_rename(name, newName):
 
 #It initializes all the parses from arg parse to have pretty error messages and usages
 def main():
+    run_cmd("mkdir -p " + cmdchain_directory)
     parser = argparse.ArgumentParser(description="A script used to automate the process of running multiple commands")
     subparsers = parser.add_subparsers(dest="action", metavar="")
 
